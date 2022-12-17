@@ -1,0 +1,9 @@
+all : mysignal shm_consumer_org shm_consumer_race shm_consumer_sem shm_producer_org shm_producer_race shm_producer_sem
+
+mysignal : mysignal.c
+	gcc -o mysignal mysignal.c
+shm_consumer_org : shm_consumer_org.c
+	gcc -o shm_consumer_org shm_consumer_org.c
+shm_consumer_org : shm_consumer_org.c
+        gcc -o shm_consumer_org shm_consumer_org.cshm_consumer_org : shm_consumer_org.c
+        gcc -o shm_consumer_org shm_consumer_org.c
